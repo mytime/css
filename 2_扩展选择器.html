@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扩展选择器的使用</title>
+
+    <style type="text/css">
+
+        /*
+            2 扩展选择器
+                a.组合选择器:用逗号隔开多个选择器
+                b.关联选择器(子标签选择器):用空格隔开
+                c.伪类选择器
+                    c1.静态伪类 ":link",":visited", 只能使用于超链接
+                    c2.动态伪类 适用于各种标签
+                                :onfocus 控件获得焦点
+                                :active 点击控件的时候
+                                :hover 当鼠标移动到某个控件上方的时候
+        */
+
+        /*组合选择器*/
+        div, p, h1, .one, #two {
+
+            border: 2px double darkblue;
+
+        }
+
+        /*关联选择器, 设置h3下面的b下面的i标签的样式, 也可以写成 h3 i */
+
+        h3 b i{
+            color: red;
+            font-style: italic;
+        }
+
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: olivedrab;
+        }
+
+        input:focus{
+            border:1px solid red;
+            color: green;
+            background-color: beige;
+
+        }
+
+        h1:active{
+            color: red;
+
+        }
+
+        /*鼠标移上去变成手型*/
+        label:hover{
+            cursor: hand;
+        }
+
+        table{
+            width: 300px;
+            height: 300px;
+            border:1px solid red;
+            border-collapse: collapse;
+
+
+        }
+        table td{
+            border:1px solid red;
+        }
+        table tr:hover{
+            background-color: lemonchiffon;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<h1>开发语言种类</h1>
+
+<div>java</div>
+
+<p>android</p>
+
+<div class="one">swife</div>
+
+<p id="two">C++</p>
+
+<h3>我要<b>改变<i>现在</i>自己</b>的现状</h3>
+
+<i>现在</i> <br/>
+
+<a href="#">Hello world</a> <br/>
+
+<input type="text" name="">
+
+<label> C 语言</label>
+
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
