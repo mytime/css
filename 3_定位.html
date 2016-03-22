@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        /*
+            position:  a. absolute 绝对定位 :原点在父容器的左上角
+                       b. relative 相对定位 :相对自己原来的位置的左上角
+
+                       顺序流：所有的标签初始排序就称为顺序流，
+                       有两种情况会脱离顺序流：
+                            1. 控件设为绝对定位时
+                            2. 启用控件的float属性时
+        */
+
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #ab {
+            position: absolute;
+            top:20px;
+            left:260px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid green;
+            color: green;
+        }
+        #re {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        #re2 {
+            position: relative;
+            top: 40px;
+            left: 20px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        p {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        span{
+            width:200px;
+            height:200px;
+            border:2px dotted red;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="ab" ><p>div-1.absolute　<br/>绝对定位，脱离顺序流</p></div>
+<div id="re"><p>div-2 relative demo</p></div>
+<div id="re2"><p>div-3 relative demo</p></div>
+
+</body>
+</html>

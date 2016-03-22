@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>z-index</title>
+    <style type="text/css">
+
+        *{
+            padding: 0px;
+            margin: 50px;
+        }
+
+        div{
+            width: 50px;
+            height: 50px;;
+        }
+        #d{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: coral;
+            z-index: 2; /* Z轴 （第几层）*/
+        }
+        #d2{
+            position: absolute;
+            top:80px;
+            left: 80px;
+            background-color: #12ff27;
+            z-index: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id ="d"></div>
+<div id="d2"></div>
+</body>
+</html>

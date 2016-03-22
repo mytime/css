@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>float属性，over-flow</title>
+    <style type="text/css">
+
+        /* float */
+        div{
+            float: left; /*div内部标签全部脱离顺序流，让后靠左对其*/
+            width: 200px;
+            height: 200px;
+        }
+        #d{
+            background-color: aqua;
+        }
+        #d1{
+            background-color:blueviolet;
+        }
+        p{
+            background-color: coral;
+            width: 600px;
+            height: 300px;
+        }
+
+        /* overflow */
+        #d2{
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+            overflow: auto; /* 盒子中的内容超出类范围 */
+        }
+        
+    </style>
+</head>
+<body>
+
+<div id = "d"></div>
+<div id = "d1"></div>
+<p></p>
+<div id="d2">overflow: auto XXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXX</div>
+</body>
+</html>
